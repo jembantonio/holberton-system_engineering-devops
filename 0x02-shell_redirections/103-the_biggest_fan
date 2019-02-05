@@ -1,0 +1,2 @@
+#!/bin/bash
+cut -f1 | sort | uniq -c | sort -n | tail -11 | sort -r | cut -d " " -f6 
