@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Script that uses SIGTERM to interrupt a process
+
+trap "echo I am invincible!!!" SIGTERM SIGINT
+i=1
+while [ $i -eq 0 ]; do
+	echo "To infinity and beyond"
+	sleep 2
+done

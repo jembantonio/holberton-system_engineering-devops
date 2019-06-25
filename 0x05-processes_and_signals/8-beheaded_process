@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Script that kills a SIGTERM process
+
+pkill -f -SIGKILL "./7-highlander"

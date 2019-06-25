@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# A script that kills the process 4-to_infinity_and_beyond
+
+kill fgrep -f "4-to_infinity_and_beyond"
