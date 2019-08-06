@@ -1,5 +1,4 @@
-# Using Puppet, create a file in /tmp with requirements
-
+# Create a file in /tmp with requirements
 file { '/tmp/holberton':
   ensure  => file,
   path 	  => '/tmp/holberton',
