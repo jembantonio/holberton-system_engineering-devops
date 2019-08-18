@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Making previous bash script short and sweet
+service apache2 start
