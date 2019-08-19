@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Bash script that installs a Nginx on a new ubuntu machine and sets up a /redirect_me
+sudo apt-get -y update
+sudo apt-get -y install nginx
+echo "Holberton School" > /usr/share/nginx/html/index.html
+sed -i "30i location /redirect_me {\n return 301 https://youtube.com/;\n}\n" /etc/nginx/sites-available/default
+sudo service nginx restart
