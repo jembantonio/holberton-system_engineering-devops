@@ -1,4 +1,4 @@
-/usr/bin/env bash
+#!/usr/bin/env bash
 # Bash script that installs a Nginx on a new ubuntu machine and sets up a /redirect_me
 sudo apt-get -y update
 sudo apt-get -y install nginx
