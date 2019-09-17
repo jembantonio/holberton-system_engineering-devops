@@ -11,8 +11,7 @@ def get_emp_name(emp_id):
                         .format(emp_id))
 
     name = user.json().get('name')
-    name.raise_for_status()
-    
+
     return (name)
 
 
