@@ -6,7 +6,8 @@ import sys
 
 
 def get_username(e_id):
-    uname = requests.get('https://jsonplaceholder.typicode.com/users/{}'.format(e_id))
+    uname = requests.get('https://jsonplaceholder.typicode.com/users/{}'
+                         .format(e_id))
 
     username = uname.json().get('username')
 
