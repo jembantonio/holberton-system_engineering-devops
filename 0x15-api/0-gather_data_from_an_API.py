@@ -52,7 +52,7 @@ def get_titles(emp_id):
 
 if __name__ == '__main__':
     emp_id = sys.argv[1]
-    print("Employee {} is done with tasks ({}/{}):"
+    print("Employee {} is done with tasks({}/{}):"
           .format(get_emp_name(emp_id),
                   get_compl_tasks(emp_id),
                   get_total_tasks(emp_id)))
