@@ -11,6 +11,8 @@ def get_emp_name(emp_id):
                         .format(emp_id))
 
     name = user.json().get('name')
+    name.raise_for_status()
+    
     return (name)
 
 
@@ -59,4 +61,4 @@ if __name__ == '__main__':
     titles = get_titles(emp_id)
 
     for title in titles:
-        print("\t{}".format(title))
+        print("\t {}".format(title))
